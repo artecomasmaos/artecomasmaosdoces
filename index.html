@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte com as Mãos Doces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            background-color: #ffc0cb; /* Rosa claro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            max-width: 50px; /* Tamanho da logo */
+            margin-right: 10px; /* Espaço entre a logo e o título */
+        }
+        nav {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            padding-bottom: 60px; /* Espaço para o rodapé fixo */
+        }
+        .product {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .product h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #333;
+            font-size: 18px;
+        }
+        .product button {
+            background-color: #ff4d4d;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+        .gourmet {
+            color: #ff4d4d; /* Cor específica para brigadeiros gourmet */
+        }
+        .classico {
+            color: #4d4dff; /* Cor específica para brigadeiros clássicos */
+        }
+        .message {
+            display: none;
+            background-color: #ffcccb;
+            color: #333;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+            border: 1px solid #ff4d4d;
+            border-radius: 5px;
+        }
+        .back-to-top {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            position: fixed;
+            bottom: 80px; /* Ajuste para ficar acima do rodapé */
+            right: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #ffc0cb;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        .icon {
+            width: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById("orcamentoMessage").style.display = "block";
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo da Arte com as Mãos Doces" class="logo">
+        <h1>Arte com as Mãos Doces</h1>
+    </header>
+    <nav>
+        <a href="#fazer-orcamento" onclick="showMessage()">Fazer Orçamento</a>
+        <a href="#redes">Contato</a>
+        <a href="#redes">Redes Sociais</a>
+    </nav>
+    <div class="container">
+        <div id="orcamentoMessage" class="message">
+            Entre em contato pelo WhatsApp para fazer orçamento: (43) 9 8499 5161
+        </div>
+        <div class="container">
+            <h1>Brigadeiros Gourmet</h1>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Casadinho">
+                <h2>Casadinho</h2>
+                <p>Delicioso brigadeiro casadinho.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Chocolate Branco">
+                <h2>Chocolate Branco</h2>
+                <p>Irresistível brigadeiro de chocolate branco.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Beijinho de Coco">
+                <h2>Beijinho de Coco</h2>
+                <p>Delicioso beijinho de coco.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Leite Ninho">
+                <h2>Leite Ninho</h2>
+                <p>Brigadeiro sabor leite ninho.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Ovomaltine">
+                <h2>Ovomaltine</h2>
+                <p>Brigadeiro de Ovomaltine crocante.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Morango e Chocolate">
+                <h2>Morango e Chocolate</h2>
+                <p>Brigadeiro de morango com chocolate.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Ao Leite">
+                <h2>Ao Leite</h2>
+                <p>Brigadeiro ao leite cremoso.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Noir (70% cacau)">
+                <h2>Noir (70% cacau)</h2>
+                <p>Brigadeiro de chocolate noir (70% cacau).</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Amendoim">
+                <h2>Amendoim</h2>
+                <p>Brigadeiro de amendoim crocante.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Coco Queimado">
+                <h2>Coco Queimado</h2>
+                <p>Brigadeiro de coco queimado.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Abacaxi com Hortelã">
+                <h2>Abacaxi com Hortelã</h2>
+                <p>Brigadeiro de abacaxi com hortelã.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Ameixa">
+                <h2>Ameixa</h2>
+                <p>Brigadeiro de ameixa.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Açaí com Granola">
+                <h2>Açaí com Granola</h2>
+                <p>Brigadeiro de açaí com granola.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Laranja">
+                <h2>Laranja</h2>
+                <p>Brigadeiro de laranja refrescante.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Frutas do Bosque">
+                <h2>Frutas do Bosque</h2>
+                <p>Brigadeiro de frutas do bosque.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Banana Caramelada">
+                <h2>Banana Caramelada</h2>
+                <p>Brigadeiro de banana caramelada.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Maracujá">
+                <h2>Maracujá</h2>
+                <p>Brigadeiro de maracujá azedinho.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Cerveja">
+                <h2>Cerveja</h2>
+                <p>Brigadeiro de cerveja especial.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Pimenta Rosa">
+                <h2>Pimenta Rosa</h2>
+                <p>Brigadeiro de pimenta rosa.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Canela">
+                <h2>Canela</h2>
+                <p>Brigadeiro de canela aromática.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Gengibre">
+                <h2>Gengibre</h2>
+                <p>Brigadeiro de gengibre picante.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Cookies">
+                <h2>Cookies</h2>
+                <p>Brigadeiro de cookies.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Cappuccino">
+                <h2>Cappuccino</h2>
+                <p>Brigadeiro de cappuccino.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Café">
+                <h2>Café</h2>
+                <p>Brigadeiro sabor café.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Paçoca">
+                <h2>Paçoca</h2>
+                <p>Brigadeiro de paçoca.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Doce de Leite">
+                <h2>Doce de Leite</h2>
+                <p>Brigadeiro de doce de leite cremoso.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Menta">
+                <h2>Menta</h2>
+                <p>Brigadeiro de menta refrescante.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Cravo e Canela">
+                <h2>Cravo e Canela</h2>
+                <p>Brigadeiro de cravo e canela.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Capim Santo">
+                <h2>Capim Santo</h2>
+                <p>Brigadeiro de capim santo.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Camomila">
+                <h2>Camomila</h2>
+                <p>Brigadeiro de camomila.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Erva Cidreira">
+                <h2>Erva Cidreira</h2>
+                <p>Brigadeiro de erva cidreira.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Capim Limão">
+                <h2>Capim Limão</h2>
+                <p>Brigadeiro de capim limão.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Macadâmia">
+                <h2>Macadâmia</h2>
+                <p>Brigadeiro de macadâmia.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Chocolate Belga">
+                <h2>Chocolate Belga</h2>
+                <p>Brigadeiro de chocolate belga.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Conhaque">
+                <h2>Conhaque</h2>
+                <p>Brigadeiro de conhaque.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Rosas">
+                <h2>Rosas</h2>
+                <p>Brigadeiro de rosas.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Milho Verde">
+                <h2>Milho Verde</h2>
+                <p>Brigadeiro de milho verde.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Manga">
+                <h2>Manga</h2>
+                <p>Brigadeiro de manga.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Chá Verde">
+                <h2>Chá Verde</h2>
+                <p>Brigadeiro de chá verde.</p>
+            </div>
+        </div>
+        
+    </div>
+        <div id="redes" class="product classico">
+            <h2>Redes Sociais</h2>
+            <p>
+                <img src="data:image/jpeg;base64,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" alt="Instagram" class="icon">
+                Siga-nos no Instagram: <a href="https://www.instagram.com/artecomasmaosdoces">@artecomasmaosdoces</a>
+            </p>
+            <p>
+                <img src="https://th.bing.com/th/id/OIP.TwESrblIhpd2D8XG5VDz5QHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7" alt="WhatsApp" class="icon">
+                Contato WhatsApp: (43) 9 8499 5161
+            </p>
+        </div>
+    </div>
+    <button class="back-to-top" onclick="scrollToTop()">Voltar ao Topo</button>
+    <footer>
+        &copy; 2024 Arte com as Mãos Doces. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
