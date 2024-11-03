@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte com as Mãos Doces</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho de Contato -->
+    <div class="top-bar">
+        <a href="https://instagram.com/artecomasmaosdoces" target="_blank">Instagram</a>
+        <a href="https://wa.me/5543984995161" target="_blank">WhatsApp</a>
+        <a href="astecomasmaosdocesofc@gmail.com">Contato</a>
+        <a href="#orcamento">Fazer Orçamento</a>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header>
+        <div class="logo-titulo">
+            <img src="logo.png" alt="Logo Arte com as Mãos">
+            <h1>Arte com as Mãos Doces</h1>
+        </div>
+        <p>Doces Gourmet feitos com amor e dedicação.</p>
+    </header>
+
+    <section class="carrossel-container">
+        <!-- Primeiro Carrossel -->
+        <div class="carrossel">
+            <div class="carrossel-imagens">
+                <img src="img/doce1.jpg" alt="Doce Gourmet 1">
+                <img src="img/doce2.jpg" alt="Doce Gourmet 2">
+                <img src="img/doce3.jpg" alt="Doce Gourmet 3">
+            </div>
+        </div>
+
+        <!-- Segundo Carrossel -->
+        <div class="carrossel">
+            <div class="carrossel-imagens">
+                <img src="img/doce4.jpg" alt="Doce Gourmet 4">
+                <img src="img/doce5.jpg" alt="Doce Gourmet 5">
+                <img src="img/doce6.jpg" alt="Doce Gourmet 6">
+            </div>
+        </div>
+
+        <!-- Terceiro Carrossel -->
+        <div class="carrossel">
+            <div class="carrossel-imagens">
+                <img src="img/doce7.jpg" alt="Doce Gourmet 7">
+                <img src="img/doce8.jpg" alt="Doce Gourmet 8">
+                <img src="img/doce9.jpg" alt="Doce Gourmet 9">
+            </div>
+        </div>
+    </section>
+
+    <section class="botao-ver-doces">
+        <a href="produtos.html">Ver Doces</a>
+    </section>
+
+    <!-- Rodapé com Contato -->
+    <footer>
+        <p>Siga-nos no Instagram: <a href="https://instagram.com/artecomasmaosdoces" target="_blank">@artecomasmaosdoces</a></p>
+        <p>WhatsApp: <a href="https://wa.me/5543984995161" target="_blank">43 98499-5161</a></p>
+        <p>&copy; 2024 Arte com as Mãos Doces. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/carrossel.js"></script>
+</body>
+<script>
+    document.querySelectorAll('.btn-maior').forEach(button => {
+        button.addEventListener('click', () => {
+            const input = button.previousElementSibling; // Pega o campo de entrada anterior
+            let currentValue = parseInt(input.value); // Converte o valor atual para inteiro
+            input.value = currentValue + 1; // Aumenta o valor em 1
+        });
+    });
+
+    document.querySelectorAll('.btn-menor').forEach(button => {
+        button.addEventListener('click', () => {
+            const input = button.nextElementSibling; // Pega o campo de entrada seguinte
+            let currentValue = parseInt(input.value); // Converte o valor atual para inteiro
+            if (currentValue > 0) { // Verifica se o valor é maior que 0
+                input.value = currentValue - 1; // Diminui o valor em 1
+            }
+        });
+    });
+</script>
+
+</html>
